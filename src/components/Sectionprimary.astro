@@ -1,0 +1,19 @@
+---
+interface Props {
+	id: string;
+    title: string;
+}
+const { id,title} = Astro.props;
+---
+<section class="page-section bg-primary text-white mb-0" id={id}>
+    <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase text-white">{title}</h2>
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plant-2" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M2 9a10 10 0 1 0 20 0" /><path d="M12 19a10 10 0 0 1 10 -10" /><path d="M2 9a10 10 0 0 1 10 10" /><path d="M12 4a9.7 9.7 0 0 1 2.99 7.5" /><path d="M9.01 11.5a9.7 9.7 0 0 1 2.99 -7.5" /></svg></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <slot />
+    </div>
+</section>
+

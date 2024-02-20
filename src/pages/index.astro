@@ -1,0 +1,84 @@
+---
+import Layout from '../components/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Navbarlink from '../components/Navbarlink.astro';
+import Header from '../components/Header.astro';
+import Sectionprimary from '../components/Sectionprimary.astro';
+import Sectionwhite from '../components/Sectionwhite.astro';
+
+import Containergrid from '../components/Containergrid.astro';
+import Itemgrid from '../components/Itemgrid.astro';
+---
+
+
+<Layout title="planta tu web">
+	<main>
+        <Navbar>
+            <Navbarlink href="#portfolio" title="Portfolio"/>
+            <Navbarlink href="#about" title="About"/>
+            <Navbarlink href="#contact" title="Contact"/>
+        </Navbar>
+        <Header id="page-top"/>
+        <Sectionwhite id="portfolio" title="Ejemplos para tu web">
+                <Containergrid>
+                    <Itemgrid src="assets/img/portfolio/cabin.png" alt="ejemplo1" title="ejemplo1" description='' modal="modal1" charmodal="#modal1"/>
+                    <Itemgrid src="assets/img/portfolio/cabin.png" alt="ejemplo2" title="ejemplo2" description='' modal="modal2" charmodal="#modal2"/>
+                    <Itemgrid src="assets/img/portfolio/cabin.png" alt="ejemplo3" title="ejemplo3" description='' modal="modal3" charmodal="#modal3"/>
+                    <Itemgrid src="assets/img/portfolio/cabin.png" alt="ejemplo4" title="ejemplo4" description='' modal="modal4" charmodal="#modal4"/>
+                    <Itemgrid src="assets/img/portfolio/cabin.png" alt="ejemplo5" title="ejemplo5" description='' modal="modal5" charmodal="#modal5"/>
+                    <Itemgrid src="assets/img/portfolio/cabin.png" alt="ejemplo6" title="ejemplo6" description='' modal="modal6" charmodal="#modal6"/>
+                </Containergrid>
+        </Sectionwhite>
+
+        <Sectionprimary id="about" title="Acerca de planta tu web">
+            <div class="row">
+                <div class="col-lg-4 ms-auto">
+                    <p class="lead">En Planta Tu Web, nos especializamos en dar vida a tus ideas en el mundo digital. Somos un equipo apasionado que se dedica al desarrollo de aplicaciones web, páginas, tiendas en línea, puntos de venta web, one pages, landing pages y mas.</p>
+                </div>
+                <div class="col-lg-4 me-auto">
+                    <p class="lead">Enfocados en la calidad y la personalización, trabajamos estrechamente contigo para ofrecer soluciones digitales únicas que destaquen tu marca. Desde proyectos simples hasta complejos, en Planta Tu Web, estamos aquí para potenciar tu presencia digital de manera efectiva y personalizada</p>
+                </div>
+            </div>
+        </Sectionprimary>
+                
+                <!-- Footer-->
+                <footer class="footer text-center">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Footer Location-->
+                            <div class="col-lg-4 mb-5 mb-lg-0">
+                                <h4 class="text-uppercase mb-4">Location</h4>
+                                <p class="lead mb-0">
+                                    2215 John Daniel Drive
+                                    <br />
+                                    Clark, MO 65243
+                                </p>
+                            </div>
+                            <!-- Footer Social Icons-->
+                            <div class="col-lg-4 mb-5 mb-lg-0">
+                                <h4 class="text-uppercase mb-4">Around the Web</h4>
+                                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                            </div>
+                            <!-- Footer About Text-->
+                            <div class="col-lg-4">
+                                <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                                <p class="lead mb-0">
+                                    Freelance is a free to use, MIT licensed Bootstrap theme created by
+                                    <a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    .
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Copyright Section-->
+                <div class="copyright py-4 text-center text-white">
+                    <div class="container"><small>Power by plantatuweb</small></div>
+                </div>  
+            <script is:inline src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	</main>
+</Layout>
+
