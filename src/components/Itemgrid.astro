@@ -6,16 +6,17 @@ interface Props {
     description: string;
     modal:string;
     charmodal:string;
+    pagina: string;
 }
-const { src,alt,title,description,modal,charmodal} = Astro.props;
+const { src,alt,title,description,modal,charmodal,pagina} = Astro.props;
 ---
 
 <!-- Item 1-->
-<div class="col-md-6 col-lg-4 mb-5">
+<div class="col-md-6 col-lg-4 mb-5 shadow-lg p-3 mb-5 bg-white rounded">
     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target={charmodal}>
         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
         </div>
+        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-5 text-center">{title}</h2>
         <img class="img-fluid" src={src} alt={alt} />
     </div>
 </div>
@@ -31,13 +32,14 @@ const { src,alt,title,description,modal,charmodal} = Astro.props;
                                 <!-- Title-->
                                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-5">{title}</h2>
                                 <!-- Image-->
-                                <img class="img-fluid rounded mb-5" src={src} alt={alt} />
+                                <img class="img-fluid rounded mb-5 shadow-lg p-3 mb-5 bg-white rounded" src={src} alt={alt} />
                                 <!-- Text-->
                                 <p class="mb-4">{description}</p>
-                                <button class="btn btn-lg btn-block btn-primary" data-bs-dismiss="modal">
-                                    <i class="fas fa-xmark fa-fw"></i>
-                                    Cerrar
-                                </button>
+                                <a  href={pagina} target="_blank">
+                                    <button class="btn btn-lg btn-block btn-primary" >
+                                        Ir a la pagina
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>

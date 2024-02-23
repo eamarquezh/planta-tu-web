@@ -8,77 +8,110 @@ import Sectionwhite from '../components/Sectionwhite.astro';
 
 import Containergrid from '../components/Containergrid.astro';
 import Itemgrid from '../components/Itemgrid.astro';
+import Donacionbtn from '../components/Donacionbtn.astro';
+import Watsbtn from '../components/Watsbtn.astro';
 ---
 
 
 <Layout title="planta tu web">
 	<main>
         <Navbar>
-            <Navbarlink href="#portfolio" title="Portfolio"/>
-            <Navbarlink href="#about" title="About"/>
-            <Navbarlink href="#contact" title="Contact"/>
+            <Navbarlink href="#muestras" title="Muestras"/>
+            <Navbarlink href="#acerca" title="Acerca"/>
+            <Navbarlink href="#ayudemos" title="Ayudemos"/>
         </Navbar>
-        <Header id="page-top"/>
-        <Sectionwhite id="portfolio" title="Ejemplos para tu web">
+        <Header id="planta-tu-web"/>
+        <Sectionwhite id="muestras" title="muestras para tu web">
                 <Containergrid>
-                    <Itemgrid src="assets/img/portfolio/cabin.png" alt="ejemplo1" title="ejemplo1" description='' modal="modal1" charmodal="#modal1"/>
-                    <Itemgrid src="assets/img/portfolio/cabin.png" alt="ejemplo2" title="ejemplo2" description='' modal="modal2" charmodal="#modal2"/>
-                    <Itemgrid src="assets/img/portfolio/cabin.png" alt="ejemplo3" title="ejemplo3" description='' modal="modal3" charmodal="#modal3"/>
-                    <Itemgrid src="assets/img/portfolio/cabin.png" alt="ejemplo4" title="ejemplo4" description='' modal="modal4" charmodal="#modal4"/>
-                    <Itemgrid src="assets/img/portfolio/cabin.png" alt="ejemplo5" title="ejemplo5" description='' modal="modal5" charmodal="#modal5"/>
-                    <Itemgrid src="assets/img/portfolio/cabin.png" alt="ejemplo6" title="ejemplo6" description='' modal="modal6" charmodal="#modal6"/>
+                    <Itemgrid src="assets/portfolio/lider-politica/lider-politica.png" alt="Líder de politica" title="Líder de politica" description='Esta pagina es perfecta para cualquier lider de politica' modal="modal1" charmodal="#modal1" pagina="assets/portfolio/lider-politica/index.html"/>
                 </Containergrid>
         </Sectionwhite>
 
-        <Sectionprimary id="about" title="Acerca de planta tu web">
-            <div class="row">
+        <Sectionprimary id="acerca" title="Acerca de planta tu web">
+            <div class="row m-5">
                 <div class="col-lg-4 ms-auto">
                     <p class="lead">En Planta Tu Web, nos especializamos en dar vida a tus ideas en el mundo digital. Somos un equipo apasionado que se dedica al desarrollo de aplicaciones web, páginas, tiendas en línea, puntos de venta web, one pages, landing pages y mas.</p>
                 </div>
                 <div class="col-lg-4 me-auto">
-                    <p class="lead">Enfocados en la calidad y la personalización, trabajamos estrechamente contigo para ofrecer soluciones digitales únicas que destaquen tu marca. Desde proyectos simples hasta complejos, en Planta Tu Web, estamos aquí para potenciar tu presencia digital de manera efectiva y personalizada</p>
+                    <p class="lead">Enfocados en la calidad y la personalización, trabajamos estrechamente contigo para ofrecer soluciones digitales únicas que destaquen tu marca. Desde proyectos simples hasta complejos, estamos aquí para potenciar tu presencia digital de manera efectiva y personalizada</p>
                 </div>
             </div>
-        </Sectionprimary>
-                
-                <!-- Footer-->
-                <footer class="footer text-center">
-                    <div class="container">
-                        <div class="row">
-                            <!-- Footer Location-->
-                            <div class="col-lg-4 mb-5 mb-lg-0">
-                                <h4 class="text-uppercase mb-4">Location</h4>
-                                <p class="lead mb-0">
-                                    2215 John Daniel Drive
-                                    <br />
-                                    Clark, MO 65243
-                                </p>
-                            </div>
-                            <!-- Footer Social Icons-->
-                            <div class="col-lg-4 mb-5 mb-lg-0">
-                                <h4 class="text-uppercase mb-4">Around the Web</h4>
-                                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
-                            </div>
-                            <!-- Footer About Text-->
-                            <div class="col-lg-4">
-                                <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                                <p class="lead mb-0">
-                                    Freelance is a free to use, MIT licensed Bootstrap theme created by
-                                    <a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    .
-                                </p>
-                            </div>
-                        </div>
+
+            <div class="row text-center">
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title text-secondary">Pagina web</h5>
+                      <p class="card-text text-secondary">Destaca con tu landing page o one page personalizada desde.</p>
+                      <p></p>
+                      <strong class="card-text text-secondary">$900 MXN.</strong>
+                      <p></p>
+                      <Watsbtn/>
                     </div>
-                </footer>
-                <!-- Copyright Section-->
-                <div class="copyright py-4 text-center text-white">
-                    <div class="container"><small>Power by plantatuweb</small></div>
-                </div>  
-            <script is:inline src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+                  </div>
+                </div>
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title text-secondary">Sitio web</h5>
+                        <p class="card-text text-secondary">Plataforma completa, explora múltiples páginas con facilidad desde.</p>
+                        <p></p>
+                        <strong class="card-text text-secondary">$1500 MXN.</strong>
+                        <p></p>
+                        <Watsbtn/>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title text-secondary">Aplicación web</h5>
+                        <p class="card-text text-secondary">La aplicación web perfecta para tu negocio segun sus necesidades.</p>
+                        <p></p>
+                        <strong class="card-text text-secondary">$? MXN.</strong>
+                        <p></p>
+                        <Watsbtn/>
+                      </div>
+                    </div>
+                  </div>
+        </Sectionprimary>
 	</main>
+    
+    <Sectionwhite id="ayudemos" title="Tambien ayudamos a nuevos negocios">
+        <div class="row">
+            <div class="col-lg-4 ms-auto">
+                <p class="lead">Planta Tu Web, nuestro proyecto altruista, se suma a nuestro negocio principal. Ofrecemos el desarrollo de sitios y aplicaciones a nuevos emprendimientos sin costo o solo cubriendo los gastos operativos. Es nuestra manera de contribuir al crecimiento de negocios emergentes, proporcionándoles una herramienta digital esencial para su progreso.</p>
+                <p class="lead">Cultivando Éxito: Haz una Donación para Impulsar Nuevos Negocios con Planta Tu Web.</p>
+                <Donacionbtn/>
+
+            </div>
+            <div class="col-lg-4 me-auto">
+                <img class="img-fluid" src="assets/img/diseo_web_a_negocios.jpg" alt="imagen  ayudemos a negosios" />
+            </div>
+        </div>
+    </Sectionwhite>
+    <a type="button"  href="https://wa.me/7711208704" class="btn btn-success btn-lg floating-btn" >
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"></path>
+        </svg>
+        <span class="ml-2">Contactar</span>
+    </a>
+    
+
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Power by plantatuweb.com</small></div>
+    </div>  
+<script is:inline src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </Layout>
 
+  <style>
+    .floating-btn {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+    }
+
+    .floating-btn:hover {
+      transform: scale(1.1);
+    }
+  </style>
